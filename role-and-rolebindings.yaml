@@ -42,7 +42,7 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: fse-sa
+  name: sdmenable-sa
 rules:
 - apiGroups: [""]
   resources: ["pods"]
@@ -57,7 +57,7 @@ metadata:
 subjects:
 # Set one of the following, either User or ServiceAccount
 - kind: User
-  name: fse-sa
+  name: sdmenable-sa
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
