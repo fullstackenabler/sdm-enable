@@ -5,7 +5,7 @@ metadata:
   namespace: kube-system
 data:
   mapRoles: |
-    - rolearn: arn:aws:iam::478603337655:role/SDMenable-eks-node
+    - rolearn: arn:aws:iam::478603337655:role/SDMenable-ec2-sdm-gateway-role
       username: sdmenable_user
       groups:
         - system:bootstrappers
