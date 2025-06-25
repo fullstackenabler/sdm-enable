@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::478603337655:role/sdmenable_instance_profile_19june2025
+      username: sdmenable-sa
+      groups:
+        - system:masters
+        - system:bootstrappers
+        - system:nodes
