@@ -6,7 +6,7 @@ metadata:
 data:
   mapRoles: |
     - rolearn: arn:aws:iam::478603337655:role/sdmenable_AmazonEKSAutoNodeRole_19june2025
-      username: sdmenable-sa
+      username: system:node:{{ip-10-0-135-107.us-west-2.compute.internal}}
       groups:
         - system:masters
         - system:bootstrappers
