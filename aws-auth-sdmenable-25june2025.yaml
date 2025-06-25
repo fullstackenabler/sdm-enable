@@ -11,6 +11,6 @@ data:
         - system:bootstrappers
         - system:nodes
     - rolearn: arn:aws:iam::478603337655:role/sdmenable_instance_profile_19june2025
-      username: system:node:{{EC2PrivateDNSName}}
+      username: sdmenable-sa
       groups:
         - sdmenable-sa-grp
