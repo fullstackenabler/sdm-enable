@@ -60,7 +60,7 @@ subjects:
   name: sdmenable-sa
   apiGroup: rbac.authorization.k8s.io
 - kind: ServiceAccount
-  name: arn:aws:sts::478603337655:assumed-role/sdmenable_instance_profile_19june2025 # "name" is case sensitive
+  name: sdmenable_instance_profile_19june2025 # "name" is case sensitive
   namespace: default
 roleRef:
   kind: ClusterRole
