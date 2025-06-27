@@ -13,8 +13,8 @@ eksctl create cluster \
 
 ```
 aws eks create-access-entry \
-  --cluster-name my-cluster \
-  --principal-arn arn:aws:iam::123456789012:role/MyRole \
+  --cluster-name sdm-enable-26june2025 \
+  --principal-arn arn:aws:iam::478603337655:role/sdmenable_instance_profile_19june2025 \
   --type STANDARD \
   --kubernetes-groups system:masters
 ```
