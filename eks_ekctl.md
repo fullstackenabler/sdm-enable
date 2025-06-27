@@ -10,3 +10,11 @@ eksctl create cluster \
   --ssh-public-key sdmenable_pair_19une2025 \
   --node-private-networking=false
 ```
+
+```
+aws eks create-access-entry \
+  --cluster-name my-cluster \
+  --principal-arn arn:aws:iam::123456789012:role/MyRole \
+  --type STANDARD \
+  --kubernetes-groups system:masters
+```
