@@ -18,3 +18,19 @@ aws eks create-access-entry \
   --type STANDARD \
   --kubernetes-groups sdmenable-sa-grp
 ```
+
+```
+kubectl auth can-i list pods --as=sdm-health
+```
+
+```
+kubectl auth can-i list namespaces --as=discovery
+```
+
+```
+kubectl auth can-i impersonate users --as=sdmenable-sa
+```
+
+```
+kubectl auth can-i impersonate users --as=sdmenable-sa --as-group=sdmenable-sa-grp
+```
