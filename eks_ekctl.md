@@ -46,7 +46,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: site
+  namespace: ngx
 spec:
   replicas: 2
   selector:
@@ -73,7 +73,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
-  namespace: site
+  namespace: ngx
 spec:
   selector:
     app: nginx
