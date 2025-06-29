@@ -45,7 +45,7 @@ metadata:
   name: sdmenable-sa
 rules:
 - apiGroups: [""]
-  resources: ["pods"]
+  resources: ["pods", "roles"]
   verbs: ["get", "watch", "list"]
 
 ---
